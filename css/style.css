@@ -1,0 +1,19 @@
+.success,
+.error {
+    padding: 5px;
+    margin: 5px 0 15px 0;
+    color: white;
+}
+
+.success {
+    background: green;
+}
+
+.error {
+    background: red;
+}
+
+#book-list tr td a{
+    text-decoration: none;
+    color: rgb(147, 43, 43);
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=z, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css"
+        integrity="sha512-5fsy+3xG8N/1PV5MIJz9ZsWpkltijBI48gBzQ/Z2eVATePGHOkMIn+xTDHIfTZFVb9GMpflF2wOWItqxAP2oLQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="css/style.css">
+    <title>Book List</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Add Book -->
+        <h3>Add Book</h3>
+        <form id="book-form">
+            <div>
+                <label for="title" class="u-full-width">Title</label>
+                <input type="text" id="title" class="u-full-width" autocomplete="off">
+            </div>
+            <div>
+                <label for="author" class="u-full-width">Author</label>
+                <input type="text" id="author" class="u-full-width" autocomplete="off">
+            </div>
+            <div>
+                <label for="isbn" class="u-full-width">ISBN#</label>
+                <input type="text" id="isbn" class="u-full-width" autocomplete="off">
+            </div>
+            <div>
+                <input type="submit" value="Submit" class="u-full-width"></div>
+        </form>
+        <br> <br>
+        <!-- Display Book List -->
+        <div class="row">
+            <div class="column two-thirds">
+                <h5>Book List</h5>
+            </div>
+            <div class="column one-third">
+                <input type="text" class="u-full-width" placeholder="Search Book" id="filter-book">
+            </div>
+        </div>
+        <table class="u-full-width">
+            <thead>
+                <tr>
+                    <th class="t-head">Author</th>
+                    <th class="t-head">Title</th>
+                    <th class="t-head">ISBN</th>
+                    <th class="t-head"></th>
+                </tr>
+            </thead>
+            <tbody id="book-list">
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
